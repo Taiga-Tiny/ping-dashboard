@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+:root {
+  --color: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --text: hsl(0, 0%, 59%);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Libre Franklin", sans-serif;
+  line-height: 1.4;
+  font-weight: 300;
+}
+.container {
+  width: 100%;
+  padding: 0 12px;
+}
+.title {
+  display: flex;
+  padding: 165px 132px 80px 132px;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content h1 {
+  font-size: 30px; /* 40 700px*/
+  font-weight: 300;
+  margin: 0 0 35px 0;
+  color: var(--text);
+}
+.content h1 .text-color {
+  color: #000;
+  font-weight: 700;
+}
+.content p {
+  font-size: 20px; /* 24 700px*/
+  margin: 0 0 66px 0;
+}
+.cta {
+  width: 100%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form .email {
+  padding: 22px 15px;
+  margin: 0 0 19px 0;
+  border-radius: 50px;
+  border: 1px solid var(--pale-blue);
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  text-indent: 62px;
+}
+.email::placeholder {
+  color: var(--pale-blue);
+  font-weight: 200;
+  font-size: 20px;
+}
+form .btn {
+  cursor: pointer;
+  padding: 22px 0;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--color);
+  color: #fff;
+  font-size: 16px;
+}
+.valid.validate{
+  display: none;
+}
+.valid.invalid{
+  display: block;
+}
+.content-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 396px;
+}
+.content-image img {
+  width: 100%;
+  object-fit: contain;
+  height: 100%;
+}
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social ul {
+  display: flex;
+}
+.social li {
+  list-style: none;
+  margin: 0 22px;
+  border-radius: 100px;
+  border: 1px solid var(--pale-blue);
+  padding: 15px;
+}
+.social li {
+  color: var(--color);
+}
+.social li:hover {
+  background-color: var(--color);
+  color: #fff;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 55px 0;
+  color: var(--text);
+}
+
+@media (min-width: 750px) {
+  .container {
+    width: 100%;
+    padding: 0 93px;
+  }
+  .content-image {
+    height: 393px;
+    margin: 133px 0 200px 0;
+  }
+}
+@media (min-width: 1024px) {
+    .container {
+    width: 100%;
+    padding: 0 300px;
+  }
+  .content h1{
+    display: flex;
+      font-size: 40px;
+  }
+  .text-color{
+      padding-left: 3px;
+  }
+  p{
+      font-size: 20px;
+  }
+  form {
+    flex-direction: revert;
+  }
+  form .email{
+    margin: 0 15px 0 0;
+    width: 100%;
+  }
+  form .btn {
+    width: 50%;
+}
+  .content-image {
+    height: 393px;
+    margin: 133px 0 200px 0;
+  }
+}
+@media (min-width: 1440px) {
+ 
+    .container {
+    width: 100%;
+    padding: 0 398px;
+  }
+}
